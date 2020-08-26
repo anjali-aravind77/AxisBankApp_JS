@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       <script src="transaction.js"></script>
+    </head>
+    <body>
+        <div class="container"> 
+            <h1>WELCOME</h1>
+            <div class="row">
+                <div class="col">
+                    <h2>Deposit</h2>
+<table>
+   
+    <tr>
+        <td>Account Number </td>
+        <td>
+            <input type="text" id="acnod">
+        </td>
+    </tr>
+    <tr>
+        <td>PIN </td>
+        <td>
+            <input type="text" id="pin">
+        </td>
+    </tr>
+    <tr>
+        <td>Amount </td>
+        <td>
+            <input type="text" id="amountd">
+        </td>
+    </tr>
+    <td>
+        <input type="button" value="Deposit" id="bdeposit" onclick="Bank.deposit()">
+    </td>
+</table>
+                </div>
+                <div class="col">
+                    <h2>Withdrawal</h2>
+                    <table>
+                       
+                        <tr>
+                            <td>Account Number </td>
+                            <td>
+                                <input type="text" id="w_acno">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PIN </td>
+                            <td>
+                                <input type="text" id="w_pin">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Amount </td>
+                            <td>
+                                <input type="text" id="w_amount">
+                            </td>
+                        </tr>
+                        <td>
+                            <input type="button" value="Withdraw" id="bwithdraw" onclick="Bank.withdrawal()">
+                        </td>
+                    </table>
+
+                </div>
+            </div>
+
+
+        </div>
+    
+    </body>
+</html>
